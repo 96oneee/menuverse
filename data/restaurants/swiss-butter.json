@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "restaurant": {
+    "id": "rst_swiss_butter_lb",
+    "slug": "swiss-butter",
+    "name": "Swiss Butter",
+    "location": "Lebanon",
+    "tagline": "Your friendly neighborhood steakhouse",
+    "contentStatus": "pilot-draft",
+    "notice": "MENUVERSE pilot built from the Swiss Butter Lebanon menu board and restaurant photos. Not yet approved for customers. Descriptions are drafts and allergens are not listed yet.",
+    "priceNote": "All prices in Lebanese pounds (LBP), as on the menu board.",
+    "currency": "LBP",
+    "locale": "en-US",
+    "money": {
+      "minorUnit": 1,
+      "fractionDigits": 0,
+      "currencyDisplay": "code"
+    },
+    "cover": {
+      "src": "media/swiss-butter/beef-hero.webp",
+      "alt": "Swiss Butter beef board: sliced steak in Swiss Butter sauce with fries, salad and brown bread"
+    },
+    "theme": {
+      "colorScheme": "dark",
+      "colors": {
+        "bg": "#141412",
+        "surface": "#1d1c19",
+        "raise": "#292722",
+        "ink": "#f2eee5",
+        "muted": "#bab3a6",
+        "faint": "#857e72",
+        "line": "rgba(242,238,229,0.12)",
+        "accent": "#d3bb4c",
+        "accent-ink": "#17150c",
+        "spot": "#3d3326",
+        "sample": "#d3bb4c",
+        "ok": "#9cc98f",
+        "warn": "#e6b45c"
+      },
+      "fonts": {
+        "display": "\"Oswald\", \"Arial Narrow\", sans-serif",
+        "accent": "\"Yellowtail\", \"Brush Script MT\", cursive",
+        "label": "\"Oswald\", \"Arial Narrow\", sans-serif",
+        "body": "\"Manrope\", system-ui, sans-serif"
+      },
+      "googleFonts": "family=Oswald:wght@400;500;600&family=Yellowtail",
+      "vars": {
+        "display-case": "uppercase",
+        "display-tracking": "0.01em",
+        "display-weight": "500",
+        "h1-size": "clamp(46px, 14vw, 68px)",
+        "card-title-size": "20px"
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "mains",
+      "name": "Mains",
+      "sortOrder": 1,
+      "note": "Every main comes in a skillet of Swiss Butter sauce. Optional: baked potato or brown bread."
+    },
+    {
+      "id": "addons",
+      "name": "Add-ons",
+      "sortOrder": 2,
+      "layout": "compact"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "sortOrder": 3
+    },
+    {
+      "id": "soft",
+      "name": "Soft drinks",
+      "sortOrder": 4,
+      "layout": "compact"
+    },
+    {
+      "id": "hot",
+      "name": "Hot drinks",
+      "sortOrder": 5,
+      "layout": "compact"
+    },
+    {
+      "id": "bar",
+      "name": "Beer & spirits",
+      "sortOrder": 6,
+      "layout": "compact"
+    },
+    {
+      "id": "wine",
+      "name": "Wine",
+      "sortOrder": 7,
+      "layout": "compact"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "beef",
+      "categoryId": "mains",
+      "name": "Beef filet or ribeye",
+      "price": {
+        "amount": 1370000
+      },
+      "available": true,
+      "summary": "Sliced and served in a skillet of Swiss Butter sauce.",
+      "description": "Your choice of beef filet or ribeye, grilled, sliced and served in a cast-iron skillet of the house Swiss Butter sauce. It comes on an oak board with fries, a dressed green salad and brown bread.",
+      "descriptionStatus": "draft",
+      "badges": [
+        "Signature"
+      ],
+      "options": [
+        {
+          "label": "Choose your cut",
+          "choices": [
+            "Beef filet",
+            "Ribeye"
+          ]
+        },
+        {
+          "label": "Optional",
+          "choices": [
+            "Baked potato",
+            "Brown bread"
+          ]
+        }
+      ],
+      "servedWith": [
+        "Fries",
+        "Green salad with house dressing",
+        "Brown bread",
+        "Chili flakes"
+      ],
+      "addOns": [
+        "add-beef",
+        "add-sauce",
+        "add-fries",
+        "add-bread"
+      ],
+      "allergens": null,
+      "media": {
+        "photo": {
+          "hero": "media/swiss-butter/beef-hero.webp",
+          "thumb": "media/swiss-butter/beef-thumb.webp",
+          "alt": "Sliced beef in a cast-iron skillet of Swiss Butter sauce, with fries, salad and brown bread on an oak board",
+          "spinPlanned": true,
+          "tall": "media/swiss-butter/beef-tall.webp"
+        },
+        "model": {
+          "glb": "media/swiss-butter/3d/beef-skillet.glb",
+          "usdz": "media/swiss-butter/3d/beef-skillet.usdz",
+          "isStandIn": true,
+          "note": "Stand-in 3D model for the AR test. The real one comes from a photo scan of the dish."
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "categoryId": "mains",
+      "name": "Salmon",
+      "price": {
+        "amount": 1370000
+      },
+      "available": true,
+      "summary": "Seared salmon in a skillet of Swiss Butter sauce.",
+      "description": "A seared salmon fillet served in a cast-iron skillet of the house Swiss Butter sauce, on an oak board with a baked potato, a dressed green salad and brown bread.",
+      "descriptionStatus": "draft",
+      "options": [
+        {
+          "label": "Optional",
+          "choices": [
+            "Baked potato",
+            "Brown bread"
+          ]
+        }
+      ],
+      "servedWith": [
+        "Baked potato",
+        "Green salad with house dressing",
+        "Brown bread",
+        "Chili flakes"
+      ],
+      "addOns": [
+        "add-beef",
+        "add-sauce",
+        "add-fries",
+        "add-bread"
+      ],
+      "allergens": null,
+      "media": {
+        "photo": {
+          "hero": "media/swiss-butter/salmon-hero.webp",
+          "thumb": "media/swiss-butter/salmon-thumb.webp",
+          "alt": "Seared salmon in a cast-iron skillet of Swiss Butter sauce, with a baked potato, salad and brown bread",
+          "spinPlanned": true,
+          "tall": "media/swiss-butter/salmon-tall.webp"
+        }
+      }
+    },
+    {
+      "id": "chicken",
+      "categoryId": "mains",
+      "name": "Chicken",
+      "price": {
+        "amount": 1260000
+      },
+      "available": true,
+      "summary": "Served in a skillet of Swiss Butter sauce.",
+      "description": "Chicken served in a cast-iron skillet of the house Swiss Butter sauce, with the same board of sides as the beef and salmon.",
+      "descriptionStatus": "draft",
+      "options": [
+        {
+          "label": "Optional",
+          "choices": [
+            "Baked potato",
+            "Brown bread"
+          ]
+        }
+      ],
+      "servedWith": [
+        "Fries",
+        "Green salad with house dressing",
+        "Brown bread",
+        "Chili flakes"
+      ],
+      "addOns": [
+        "add-chicken",
+        "add-sauce",
+        "add-fries",
+        "add-bread"
+      ],
+      "allergens": null,
+      "media": {}
+    },
+    {
+      "id": "add-chicken",
+      "categoryId": "addons",
+      "name": "Chicken",
+      "price": {
+        "amount": 630000
+      },
+      "available": true
+    },
+    {
+      "id": "add-beef",
+      "categoryId": "addons",
+      "name": "Beef filet, ribeye or salmon",
+      "price": {
+        "amount": 690000
+      },
+      "available": true
+    },
+    {
+      "id": "add-sauce",
+      "categoryId": "addons",
+      "name": "SB sauce",
+      "price": {
+        "amount": 230000
+      },
+      "available": true,
+      "summary": "Extra Swiss Butter sauce"
+    },
+    {
+      "id": "add-bread",
+      "categoryId": "addons",
+      "name": "Bread basket",
+      "price": {
+        "amount": 90000
+      },
+      "available": true
+    },
+    {
+      "id": "add-fries",
+      "categoryId": "addons",
+      "name": "Fries basket",
+      "price": {
+        "amount": 230000
+      },
+      "available": true
+    },
+    {
+      "id": "molten-chocolate",
+      "categoryId": "desserts",
+      "name": "Molten chocolate",
+      "price": {
+        "amount": 810000
+      },
+      "available": true,
+      "summary": "Warm chocolate cake, ice cream, chocolate sauce.",
+      "description": "A warm molten chocolate cake served in a small cast-iron skillet, topped with a scoop of ice cream and finished with chocolate sauce.",
+      "descriptionStatus": "draft",
+      "allergens": null,
+      "media": {
+        "photo": {
+          "hero": "media/swiss-butter/molten-hero.webp",
+          "thumb": "media/swiss-butter/molten-thumb.webp",
+          "alt": "Molten chocolate cake with a scoop of ice cream in a cast-iron skillet",
+          "spinPlanned": true,
+          "tall": "media/swiss-butter/molten-tall.webp",
+          "fit": "card"
+        }
+      }
+    },
+    {
+      "id": "pain-perdu",
+      "categoryId": "desserts",
+      "name": "Pain perdu",
+      "price": {
+        "amount": 720000
+      },
+      "available": true,
+      "summary": "Caramelised French toast, ice cream, caramel.",
+      "description": "Pain perdu served warm in a cast-iron skillet, topped with a scoop of ice cream and a swirl of caramel sauce.",
+      "descriptionStatus": "draft",
+      "allergens": null,
+      "media": {
+        "photo": {
+          "hero": "media/swiss-butter/painperdu-hero.webp",
+          "thumb": "media/swiss-butter/painperdu-thumb.webp",
+          "alt": "Pain perdu with ice cream and caramel sauce in a cast-iron skillet",
+          "spinPlanned": true,
+          "tall": "media/swiss-butter/painperdu-tall.webp",
+          "fit": "card"
+        }
+      }
+    },
+    {
+      "id": "ice-cream",
+      "categoryId": "desserts",
+      "name": "Ice cream scoop or sorbet",
+      "price": {
+        "amount": 110000
+      },
+      "available": true,
+      "summary": "One scoop.",
+      "allergens": null,
+      "media": {}
+    },
+    {
+      "id": "soft-soda",
+      "categoryId": "soft",
+      "name": "Soda",
+      "price": {
+        "amount": 180000
+      },
+      "available": true
+    },
+    {
+      "id": "soft-water--small",
+      "categoryId": "soft",
+      "name": "Water, small",
+      "price": {
+        "amount": 90000
+      },
+      "available": true
+    },
+    {
+      "id": "soft-water--large",
+      "categoryId": "soft",
+      "name": "Water, large",
+      "price": {
+        "amount": 180000
+      },
+      "available": true
+    },
+    {
+      "id": "soft-sparkling-water--small",
+      "categoryId": "soft",
+      "name": "Sparkling water, small",
+      "price": {
+        "amount": 180000
+      },
+      "available": true
+    },
+    {
+      "id": "soft-sparkling-water--large",
+      "categoryId": "soft",
+      "name": "Sparkling water, large",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "soft-fresh-juice",
+      "categoryId": "soft",
+      "name": "Fresh juice",
+      "price": {
+        "amount": 250000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-espresso",
+      "categoryId": "hot",
+      "name": "Espresso",
+      "price": {
+        "amount": 180000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-double-espresso",
+      "categoryId": "hot",
+      "name": "Double espresso",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-latté",
+      "categoryId": "hot",
+      "name": "Latté",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-cappuccino",
+      "categoryId": "hot",
+      "name": "Cappuccino",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-americano",
+      "categoryId": "hot",
+      "name": "Americano",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "hot-tea",
+      "categoryId": "hot",
+      "name": "Tea",
+      "price": {
+        "amount": 180000
+      },
+      "available": true
+    },
+    {
+      "id": "bar-local-craft-beer",
+      "categoryId": "bar",
+      "name": "Local craft beer",
+      "price": {
+        "amount": 320000
+      },
+      "available": true
+    },
+    {
+      "id": "bar-spirits--regular-glass",
+      "categoryId": "bar",
+      "name": "Spirits, regular glass",
+      "price": {
+        "amount": 580000
+      },
+      "available": true
+    },
+    {
+      "id": "bar-spirits--premium-glass",
+      "categoryId": "bar",
+      "name": "Spirits, premium glass",
+      "price": {
+        "amount": 670000
+      },
+      "available": true
+    },
+    {
+      "id": "bar-spirits--regular-shot",
+      "categoryId": "bar",
+      "name": "Spirits, regular shot",
+      "price": {
+        "amount": 310000
+      },
+      "available": true
+    },
+    {
+      "id": "bar-spirits--premium-shot",
+      "categoryId": "bar",
+      "name": "Spirits, premium shot",
+      "price": {
+        "amount": 360000
+      },
+      "available": true
+    },
+    {
+      "id": "wine-0",
+      "categoryId": "wine",
+      "name": "Small carafe",
+      "price": {
+        "amount": 540000
+      },
+      "available": true,
+      "summary": "House wine"
+    },
+    {
+      "id": "wine-1",
+      "categoryId": "wine",
+      "name": "Large carafe",
+      "price": {
+        "amount": 810000
+      },
+      "available": true,
+      "summary": "House wine"
+    },
+    {
+      "id": "wine-2",
+      "categoryId": "wine",
+      "name": "Italian red wine",
+      "price": {
+        "amount": 2700000
+      },
+      "available": true,
+      "summary": "Bottle"
+    },
+    {
+      "id": "wine-3",
+      "categoryId": "wine",
+      "name": "French red wine",
+      "price": {
+        "amount": 2450000
+      },
+      "available": true,
+      "summary": "Bottle"
+    },
+    {
+      "id": "wine-4",
+      "categoryId": "wine",
+      "name": "Sunset rosé",
+      "price": {
+        "amount": 850000
+      },
+      "available": true,
+      "summary": "Half bottle"
+    },
+    {
+      "id": "wine-5",
+      "categoryId": "wine",
+      "name": "Blanc de blancs",
+      "price": {
+        "amount": 850000
+      },
+      "available": true,
+      "summary": "Half bottle"
+    },
+    {
+      "id": "wine-6",
+      "categoryId": "wine",
+      "name": "Sunset rosé",
+      "price": {
+        "amount": 1300000
+      },
+      "available": true,
+      "summary": "Bottle"
+    },
+    {
+      "id": "wine-7",
+      "categoryId": "wine",
+      "name": "Blanc de blancs",
+      "price": {
+        "amount": 1300000
+      },
+      "available": true,
+      "summary": "Bottle"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "restaurant": {
+    "id": "rst_sample_table",
+    "slug": "sample-table",
+    "name": "The Sample Table",
+    "tagline": "A demonstration menu for MENUVERSE",
+    "isSample": true,
+    "notice": "Sample content. This restaurant, its dishes and prices are invented for the demo. The dish images are computer-generated.",
+    "currency": "USD",
+    "locale": "en-US",
+    "theme": { "accent": "#e9a15b" }
+  },
+  "categories": [
+    { "id": "starters", "name": "Starters", "sortOrder": 1 },
+    { "id": "mains", "name": "Mains", "sortOrder": 2 },
+    { "id": "desserts", "name": "Desserts", "sortOrder": 3 },
+    { "id": "drinks", "name": "Drinks", "sortOrder": 4 }
+  ],
+  "dishes": [
+    {
+      "id": "burrata",
+      "categoryId": "starters",
+      "name": "Burrata & heirloom tomatoes",
+      "summary": "Creamy burrata, ripe tomatoes, basil, olive oil.",
+      "description": "A whole burrata torn open at the table, surrounded by heirloom tomatoes in five colours, torn basil, cracked black pepper and a pool of cold-pressed olive oil.",
+      "price": { "amount": 1450 },
+      "ingredients": ["Burrata", "Heirloom tomatoes", "Basil", "Olive oil", "Black pepper", "Sea salt"],
+      "allergens": ["milk"],
+      "dietary": ["vegetarian", "gluten-free"],
+      "available": true,
+      "media": { "spin": { "path": "media/dishes/burrata", "frames": 36 } }
+    },
+    {
+      "id": "steak-frites",
+      "categoryId": "mains",
+      "name": "Sliced steak & frites",
+      "summary": "Grilled sirloin, herb butter sauce, crisp fries.",
+      "description": "Sirloin grilled medium and sliced, finished with a warm herb-butter sauce. Served with a generous pile of thin, crisp fries and extra sauce on the side.",
+      "price": { "amount": 2900 },
+      "ingredients": ["Beef sirloin", "Butter", "Mixed herbs", "Mustard", "Potatoes", "Sunflower oil"],
+      "allergens": ["milk", "mustard"],
+      "dietary": ["gluten-free"],
+      "badges": ["Most ordered"],
+      "available": true,
+      "media": { "spin": { "path": "media/dishes/steak-frites", "frames": 36 } }
+    },
+    {
+      "id": "burger",
+      "categoryId": "mains",
+      "name": "Smash cheeseburger",
+      "summary": "Beef patty, cheddar, lettuce, tomato, brioche.",
+      "description": "A thick beef patty with melted cheddar, crisp lettuce and tomato on a toasted sesame brioche bun. Comes on a board with fries and house ketchup.",
+      "price": { "amount": 2200 },
+      "ingredients": ["Beef", "Cheddar", "Brioche bun", "Sesame", "Lettuce", "Tomato", "Fries", "Ketchup"],
+      "allergens": ["gluten", "milk", "eggs", "sesame"],
+      "dietary": [],
+      "available": true,
+      "media": { "spin": { "path": "media/dishes/burger", "frames": 36 } }
+    },
+    {
+      "id": "salmon",
+      "categoryId": "mains",
+      "name": "Roasted salmon & asparagus",
+      "summary": "Herb-crusted salmon, asparagus, lemon.",
+      "description": "Salmon fillet roasted with an herb crust, served with grilled asparagus, a lemon wedge, citrus emulsion and microgreens.",
+      "price": { "amount": 2700 },
+      "ingredients": ["Salmon", "Asparagus", "Lemon", "Herbs", "Egg yolk", "Olive oil"],
+      "allergens": ["fish", "eggs"],
+      "dietary": ["gluten-free"],
+      "available": true,
+      "media": { "spin": { "path": "media/dishes/salmon", "frames": 36 } }
+    },
+    {
+      "id": "spaghetti",
+      "categoryId": "mains",
+      "name": "Spaghetti al pomodoro",
+      "summary": "Slow-cooked tomato, basil, aged parmesan.",
+      "description": "Spaghetti twirled in a slow-cooked tomato sauce, topped with fresh basil and shaved aged parmesan.",
+      "price": { "amount": 1900 },
+      "ingredients": ["Durum wheat spaghetti", "Tomatoes", "Garlic", "Basil", "Parmesan", "Olive oil"],
+      "allergens": ["gluten", "milk"],
+      "dietary": ["vegetarian"],
+      "available": false,
+      "unavailableNote": "Sold out tonight",
+      "media": { "spin": { "path": "media/dishes/spaghetti", "frames": 36 } }
+    },
+    {
+      "id": "chocolate-dome",
+      "categoryId": "desserts",
+      "name": "Chocolate dome",
+      "summary": "Dark chocolate mousse, raspberries, gold leaf.",
+      "description": "Dark chocolate mousse under a mirror glaze, set on a hazelnut sablé, with fresh raspberries, mint, a raspberry coulis swoosh and a few flakes of gold leaf.",
+      "price": { "amount": 1300 },
+      "ingredients": ["Dark chocolate", "Cream", "Eggs", "Hazelnuts", "Wheat flour", "Raspberries", "Mint", "Gold leaf"],
+      "allergens": ["milk", "eggs", "nuts", "gluten", "soy"],
+      "dietary": ["vegetarian"],
+      "available": true,
+      "media": { "spin": { "path": "media/dishes/chocolate-dome", "frames": 36 } }
+    },
+    {
+      "id": "lemonade",
+      "categoryId": "drinks",
+      "name": "House lemonade",
+      "summary": "Fresh lemon, mint, sparkling water.",
+      "description": "Freshly squeezed lemons, a little cane sugar and mint, topped with sparkling water.",
+      "price": { "amount": 650 },
+      "ingredients": ["Lemon", "Cane sugar", "Mint", "Sparkling water"],
+      "allergens": [],
+      "dietary": ["vegan", "gluten-free"],
+      "available": true,
+      "media": {}
+    },
+    {
+      "id": "iced-tea",
+      "categoryId": "drinks",
+      "name": "Peach iced tea",
+      "summary": "Black tea brewed cold with peach.",
+      "description": "Black tea cold-brewed overnight with white peach, lightly sweetened and served over ice.",
+      "price": { "amount": 600 },
+      "ingredients": ["Black tea", "Peach", "Cane sugar"],
+      "allergens": [],
+      "dietary": ["vegan", "gluten-free"],
+      "available": true,
+      "media": {}
+    }
+  ]
+}
