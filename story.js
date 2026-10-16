@@ -151,7 +151,7 @@ function slide(d, i, all) {
       ${choices.length ? `<div class="choices">${choices.map((c) => `<span>${esc(c)}</span>`).join('')}</div>` : ''}
       <div class="buy">
         <span class="price">${money(d.price.amount)}</span>
-        <span class="btns">${d.media?.model ? `<button class="btn ghost-btn" data-ar="${d.id}">${icon.cube}See it in 3D</button>` : ''}<button class="btn" data-details="${d.id}">${icon.info}Details</button></span>
+        <span class="btns">${d.media?.model ? `<button class="btn ghost-btn" data-ar="${d.id}">${icon.cube}See it on your table</button>` : ''}<button class="btn" data-details="${d.id}">${icon.info}Details</button></span>
       </div>
     </div>
   </section>`;
@@ -225,7 +225,7 @@ async function openAR(id) {
     <model-viewer id="mv" ios-src="${esc(m.usdz)}" alt="3D model of ${esc(d.name)}"
       ar ar-modes="webxr scene-viewer quick-look" ar-scale="fixed" ar-placement="floor"
       camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="0" rotation-per-second="18deg"
-      camera-orbit="25deg 60deg 0.6m" min-camera-orbit="auto 20deg auto" max-camera-orbit="auto 85deg auto"
+      camera-orbit="0deg ${m.kind === 'photo' ? '40deg 1.05m' : '60deg 0.6m'}" min-camera-orbit="auto 20deg auto" max-camera-orbit="auto 85deg auto"
       shadow-intensity="1.1" shadow-softness="0.8" exposure="0.9" environment-image="neutral" interaction-prompt="none">
       <button slot="ar-button" class="btn ar-go">${icon.cube}Place it on my table</button>
       <div class="ar-loading" slot="progress-bar"></div>
@@ -235,7 +235,7 @@ async function openAR(id) {
       <button class="x" id="ar-close" aria-label="Close 3D view">${icon.x}</button>
     </div>
     <p class="ar-help" id="ar-help">Drag to turn it, pinch to zoom.</p>
-    ${m.isStandIn ? `<p class="ar-note">${esc(m.note)}</p>` : ''}`;
+    ${m.note ? `<p class="ar-note">${esc(m.note)}</p>` : ''}`;
   root.appendChild(wrap);
   requestAnimationFrame(() => wrap.classList.add('open'));
   const close = () => { wrap.classList.remove('open'); setTimeout(() => wrap.remove(), 300); };

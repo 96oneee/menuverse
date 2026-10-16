@@ -149,10 +149,10 @@
           "tall": "media/swiss-butter/beef-tall.webp"
         },
         "model": {
-          "glb": "media/swiss-butter/3d/beef-skillet.glb",
-          "usdz": "media/swiss-butter/3d/beef-skillet.usdz",
-          "isStandIn": true,
-          "note": "Stand-in 3D model for the AR test. The real one comes from a photo scan of the dish."
+          "glb": "media/swiss-butter/3d/beef-board-photo.glb",
+          "usdz": "media/swiss-butter/3d/beef-board-photo.usdz",
+          "kind": "photo",
+          "note": "Your real Swiss Butter photo, cut out and laid on the table at real size. A full 3D scan of the dish will replace it."
         }
       }
     },
